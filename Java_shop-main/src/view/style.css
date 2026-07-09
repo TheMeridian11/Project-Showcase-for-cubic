@@ -1,0 +1,54 @@
+/* :root {
+    --java-yellow: #ebc819;
+    --python-blue: #168FC1;
+} */
+
+.hbox {
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-spacing: 0;
+}
+
+.label {
+    -fx-font-size: 10pt;
+    -fx-font-family: Helvetica;
+    -fx-text-fill: #ebc819;
+    -fx-font-weight: bold;
+}
+
+.errorLabel {
+    -fx-text-fill: red;
+    -fx-text-weight: bold;
+}
+
+.heading {
+    -fx-font-size: 12pt;
+    -fx-font-family: Helvetica;
+    -fx-text-fill: #ebc819;
+    -fx-font-weight: bold;
+}
+
+.table-column {
+    -fx-alignment: center;
+}
+
+.button{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-font-weight: bold;
+    -fx-border-color:#ebc819; 
+    -fx-background-color:#ebc819;
+}
+
+.button:hover{     
+  -fx-background-color:#ebc819; 
+  -fx-text-fill:white;
+  -fx-font-weight:bold; 
+  fx-font-size: 11pt;
+  -fx-border-color:#ebc819; 
+}
+
+/* .textfield {
+    -fx-border-radius: 0;
+    -fx-background-color: rgb(226, 243, 255);
+} */

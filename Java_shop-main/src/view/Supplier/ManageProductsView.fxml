@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Supplier.ManageProductsController">
+    
+    <ImageView fitWidth="600.0" fitHeight="600.0" preserveRatio="true">
+        <image><Image url="@/image/supplier.png"/></image>
+    </ImageView>
+    <Separator/>
+
+    <Label fx:id="editSupplierLabel" text="Edit Supplier" styleClass="heading"/>
+    <Separator/>
+
+    <ListView fx:id="productsListView" prefWidth="600" prefHeight="600">
+        <placeholder><Label text="No products listed yet"/></placeholder>
+    </ListView>
+
+    <HBox styleClass="hbox">
+        <Button fx:id="removeButton" text="Remove" disable="true" prefWidth="200.0" onAction="#removeProduct"/>
+        <Button fx:id="delistButton" text="Delist" disable="true" prefWidth="200.0" onAction="#delistProduct"/>
+        <Button text="Close" prefWidth="200.0" onAction="#userExit"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@/view/style.css"/>
+    </stylesheets>
+</VBox>

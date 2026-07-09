@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.User.UserDashboardController">
+
+    <ImageView fitWidth="600.0" fitHeight="600.0" preserveRatio="true">
+        <image><Image url="@/image/user.png"/></image>
+    </ImageView>
+    <Separator/>
+
+    <Label fx:id="userTypeDashboardMessage" text="Welcome to the ..." styleClass="heading"/>
+    <Separator/>
+
+    <HBox styleClass="hbox">
+        <Button fx:id="userTypeInteractButton" text="Shop/Manage" prefWidth="200" onAction="#userTypeInteract"/>
+        <Button fx:id="userOrderHistory" text="Order History" prefWidth="200" onAction="#viewUserOrderHistory"/>
+        <Button text="Close" prefWidth="200" onAction="#userExit"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@/view/style.css"/>
+    </stylesheets>
+
+</VBox>

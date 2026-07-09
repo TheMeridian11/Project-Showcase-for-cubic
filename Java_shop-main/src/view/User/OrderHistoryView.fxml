@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.User.OrderHistoryController">
+
+    <ImageView fitWidth="600.0" fitHeight="600.0" preserveRatio="true">
+        <image><Image url="@/image/user.png"/></image>
+    </ImageView>
+    <Separator/>
+    
+    <Label fx:id="userOrderHistoryLabel" text="Order History" styleClass="heading"/>
+    <Separator/>
+
+    <ListView fx:id="userPurchaseHistory" prefWidth="600" prefHeight="600">
+        <placeholder><Label text="No purchases made yet"/></placeholder>
+    </ListView>
+
+    <HBox styleClass="hbox">
+        <Button text="Close" prefWidth="600" onAction="#userExit"/>
+    </HBox>
+
+    <stylesheets>
+            <URL value="@/view/style.css"/>
+    </stylesheets>
+
+</VBox>

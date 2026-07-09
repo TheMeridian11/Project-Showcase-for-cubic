@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ErrorController">
+    <ImageView fitWidth="600.0" fitHeight="600.0" preserveRatio="true">
+        <image><Image url="@/image/error.png"/></image>
+    </ImageView>
+    <Separator/>
+
+    <Label text="Error" styleClass="heading"/>
+    <Separator/>
+
+    <Label text="${controller.ErrorModel.exception}" styleClass="errorLabel"/>
+    <Label text="${controller.ErrorModel.message}" styleClass="label"/>
+
+    <Button text="Close" prefWidth="600.0" onAction="#userExit"/>
+
+    <stylesheets>
+            <URL value="@style.css"/>
+    </stylesheets>
+
+</VBox>
